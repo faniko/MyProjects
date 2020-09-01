@@ -37,12 +37,5 @@ fixture `Add item to card test - nopcommerce`
         await t.expect(item_NameInCard).eql(item_name)
         console.log('In the shopping card: '+ item_NameInCard)
         console.log('In the page:  '+item_name)
-
-        
-
-        
-
-
     }
-
     )
