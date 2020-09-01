@@ -1,0 +1,31 @@
+{
+  "name": "testcafe-testing",
+  "version": "1.0.0",
+  "description": "Automated testing with Testcafe",
+  "main": "index.js",
+  "scripts": {
+    "test:chrome": "testcafe chrome ./tests_first-project -s takeOnFails=true",
+
+    "test:chrome:demo": "testcafe chrome ./nopcommerce_tests -s takeOnFails=true",
+
+    "test:chrome:5": "testcafe -c chrome ./tests_first-project -s takeOnFails=true",
+    "test:chrome:headless": "testcafe chrome:headless ./tests_first-project -s takeOnFails=true",
+    "test:chrome:mobile": "testcafe chrome:emulation:device=iphone X ./tests_first-project -s takeOnFails=true",
+    "test:firefox": "testcafe firefox ./tests_first-project -s takeOnFails=true",
+    "test:multiple": "testcafe chrome,firefix ./tests_first-project -s takeOnFails=true"
+  },
+  "keywords": [
+    "TestCafe",
+    "Testing",
+    "Automation"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "prettier": "^2.1.0",
+    "testcafe": "^1.9.1"
+  },
+  "devDependencies": {
+    "xpath-to-css": "^1.0.5"
+  }
+}
