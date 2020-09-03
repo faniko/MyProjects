@@ -1,13 +1,11 @@
 import {Selector} from 'testcafe'
 import Menu from '../nopcommerce_Page-Objects/components/Menu'
-import Desktops from '../nopcommerce_Page-Objects/Pages/Desktops'
 import BasePage from '../nopcommerce_Page-Objects/Pages/BasePage'
 import ShoppingCard from '../nopcommerce_Page-Objects/Pages/ShoppingCard'
 import Header from '../nopcommerce_Page-Objects/components/Header'
 import * as xPathToCss from 'xpath-to-css'
 
 const menu = new Menu
-const desktops = new Desktops
 const basepage = new BasePage
 const shoppingCard = new ShoppingCard
 const header = new Header
