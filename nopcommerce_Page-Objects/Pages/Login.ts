@@ -2,11 +2,18 @@ import {Selector, t} from 'testcafe'
 
 
 class Login {
-    emailInput: Selector = Selector('#Email')
-    passwordInput: Selector = Selector('#Password')
-    loginButton: Selector = Selector('.login-button')
-    errorMessage: Selector = Selector('div').withText('Login was unsuccessful. Please correct the errors and try again.')
+    emailInput: Selector
+    passwordInput: Selector
+    loginButton: Selector 
+    errorMessage: Selector 
 
+    constructor()
+    {
+        this.emailInput = Selector('#Email')
+        this.passwordInput = Selector('#Password')
+        this.loginButton = Selector('.login-button')
+        this.errorMessage = Selector('div').withText('Login was unsuccessful. Please correct the errors and try again.')
+    }
     async login_func (email,password)
     {
         await t

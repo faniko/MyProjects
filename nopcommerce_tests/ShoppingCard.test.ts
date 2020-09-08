@@ -35,6 +35,9 @@ test("The price in the shopping cart will match the total price", async t => {
 })
 
 test("Adding gift warpping will change the totel price", async t =>{
+    
+    //const GiftWarpping_option = Selector(shoppingCard.GiftWarpping).find('option')
+
     await t
     .click(shoppingCard.GiftWarpping).click(shoppingCard.GiftWarpping_option.withText('Yes [+$10.00]')).expect(shoppingCard.GiftWarpping.value).eql('2')
     const item_price = await shoppingCard.item_price.textContent
